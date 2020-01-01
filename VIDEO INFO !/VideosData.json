@@ -1,0 +1,22 @@
+{
+    "status": ["ok",
+        "not okay",
+        "good"
+    ],
+    "results": [{
+            "name": "ABC Songs for Children",
+            "videoURL": "https://www.youtube.com/watch?v=_UR-l3QI2nE",
+            "image": "abcKids"
+        },
+        {
+            "name": "Outdoor Adventures with Peppa Pig!",
+            "videoURL": "https://www.youtube.com/watch?v=Kd9mALZpb4c",
+            "image": "peppa"
+        },
+        {
+            "name": "Mickey Mouse Clubhouse",
+            "videoURL": "https://www.youtube.com/watch?v=cC03A0OgMuA",
+            "image": "mickeyMouse"
+        }
+    ]
+}
