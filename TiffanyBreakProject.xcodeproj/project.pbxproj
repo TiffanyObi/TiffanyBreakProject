@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		3E02F99323BACF9200C729BF /* Network Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E02F99223BACF9200C729BF /* Network Helper.swift */; };
 		3E02F99523BAD18100C729BF /* App Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E02F99423BAD18100C729BF /* App Error.swift */; };
+		3E452D2F23BFCBC200AC3D9E /* TicTacToeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E452D2E23BFCBC200AC3D9E /* TicTacToeViewController.swift */; };
+		3E452D3123BFCBE500AC3D9E /* ColorMatchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E452D3023BFCBE500AC3D9E /* ColorMatchingViewController.swift */; };
+		3E452D3323BFCC2400AC3D9E /* NumberMatchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E452D3223BFCC2400AC3D9E /* NumberMatchingViewController.swift */; };
 		3E5446E823B6AF6E00373107 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5446E723B6AF6E00373107 /* AppDelegate.swift */; };
 		3E5446EA23B6AF6E00373107 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5446E923B6AF6E00373107 /* SceneDelegate.swift */; };
 		3E5446EC23B6AF6E00373107 /* MAINViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5446EB23B6AF6E00373107 /* MAINViewController.swift */; };
@@ -35,6 +38,9 @@
 /* Begin PBXFileReference section */
 		3E02F99223BACF9200C729BF /* Network Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network Helper.swift"; sourceTree = "<group>"; };
 		3E02F99423BAD18100C729BF /* App Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Error.swift"; sourceTree = "<group>"; };
+		3E452D2E23BFCBC200AC3D9E /* TicTacToeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeViewController.swift; sourceTree = "<group>"; };
+		3E452D3023BFCBE500AC3D9E /* ColorMatchingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorMatchingViewController.swift; sourceTree = "<group>"; };
+		3E452D3223BFCC2400AC3D9E /* NumberMatchingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberMatchingViewController.swift; sourceTree = "<group>"; };
 		3E5446E423B6AF6E00373107 /* TiffanyBreakProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TiffanyBreakProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E5446E723B6AF6E00373107 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E5446E923B6AF6E00373107 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,10 +96,21 @@
 			path = "NetworkHelper & AppError";
 			sourceTree = "<group>";
 		};
+		3E452D2D23BFCB7100AC3D9E /* GAMES INFO! */ = {
+			isa = PBXGroup;
+			children = (
+				3E452D2E23BFCBC200AC3D9E /* TicTacToeViewController.swift */,
+				3E452D3023BFCBE500AC3D9E /* ColorMatchingViewController.swift */,
+				3E452D3223BFCC2400AC3D9E /* NumberMatchingViewController.swift */,
+			);
+			path = "GAMES INFO!";
+			sourceTree = "<group>";
+		};
 		3E5446DB23B6AF6E00373107 = {
 			isa = PBXGroup;
 			children = (
 				3E02F99123BACF4100C729BF /* NetworkHelper & AppError */,
+				3E452D2D23BFCB7100AC3D9E /* GAMES INFO! */,
 				3E02F99023BACE4500C729BF /* VIDEO INFO ! */,
 				3E5446E623B6AF6E00373107 /* TiffanyBreakProject */,
 				3E5446FD23B6AF7300373107 /* TiffanyBreakProjectTests */,
@@ -238,11 +255,14 @@
 				3E54470E23B6D5CE00373107 /* VideosTableViewCell.swift in Sources */,
 				3E54470C23B6CD6900373107 /* VideosStruct.swift in Sources */,
 				3E5446EC23B6AF6E00373107 /* MAINViewController.swift in Sources */,
+				3E452D2F23BFCBC200AC3D9E /* TicTacToeViewController.swift in Sources */,
 				3E5446E823B6AF6E00373107 /* AppDelegate.swift in Sources */,
 				3E54471023B6D81900373107 /* VIDEOSViewController.swift in Sources */,
 				3E5446EA23B6AF6E00373107 /* SceneDelegate.swift in Sources */,
+				3E452D3123BFCBE500AC3D9E /* ColorMatchingViewController.swift in Sources */,
 				3E02F99523BAD18100C729BF /* App Error.swift in Sources */,
 				3E02F99323BACF9200C729BF /* Network Helper.swift in Sources */,
+				3E452D3323BFCC2400AC3D9E /* NumberMatchingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
