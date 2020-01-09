@@ -1,5 +1,5 @@
 //
-//  NumberMatchingViewController.swift
+//  SpellingGameViewController.swift
 //  TiffanyBreakProject
 //
 //  Created by Tiffany Obi on 1/3/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NumberMatchingViewController: UIViewController {
+class SpellingGameViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -11,7 +11,13 @@
 		3E02F99523BAD18100C729BF /* App Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E02F99423BAD18100C729BF /* App Error.swift */; };
 		3E452D2F23BFCBC200AC3D9E /* TicTacToeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E452D2E23BFCBC200AC3D9E /* TicTacToeViewController.swift */; };
 		3E452D3123BFCBE500AC3D9E /* ColorMatchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E452D3023BFCBE500AC3D9E /* ColorMatchingViewController.swift */; };
-		3E452D3323BFCC2400AC3D9E /* NumberMatchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E452D3223BFCC2400AC3D9E /* NumberMatchingViewController.swift */; };
+		3E452D3323BFCC2400AC3D9E /* NumberGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E452D3223BFCC2400AC3D9E /* NumberGameViewController.swift */; };
+		3E452D3523C0348B00AC3D9E /* SpellingGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E452D3423C0348B00AC3D9E /* SpellingGameViewController.swift */; };
+		3E452D3723C035E700AC3D9E /* GAMESViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E452D3623C035E700AC3D9E /* GAMESViewController.swift */; };
+		3E452D3923C4F13600AC3D9E /* SAFARIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E452D3823C4F13600AC3D9E /* SAFARIViewController.swift */; };
+		3E452D3B23C6098C00AC3D9E /* CountingGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E452D3A23C6098C00AC3D9E /* CountingGame.swift */; };
+		3E452D3D23C60E6E00AC3D9E /* NumberFun.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E452D3C23C60E6E00AC3D9E /* NumberFun.json */; };
+		3E45D07523C6DB8F00703FDF /* DoddleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E45D07423C6DB8F00703FDF /* DoddleViewController.swift */; };
 		3E5446E823B6AF6E00373107 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5446E723B6AF6E00373107 /* AppDelegate.swift */; };
 		3E5446EA23B6AF6E00373107 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5446E923B6AF6E00373107 /* SceneDelegate.swift */; };
 		3E5446EC23B6AF6E00373107 /* MAINViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5446EB23B6AF6E00373107 /* MAINViewController.swift */; };
@@ -40,7 +46,13 @@
 		3E02F99423BAD18100C729BF /* App Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Error.swift"; sourceTree = "<group>"; };
 		3E452D2E23BFCBC200AC3D9E /* TicTacToeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeViewController.swift; sourceTree = "<group>"; };
 		3E452D3023BFCBE500AC3D9E /* ColorMatchingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorMatchingViewController.swift; sourceTree = "<group>"; };
-		3E452D3223BFCC2400AC3D9E /* NumberMatchingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberMatchingViewController.swift; sourceTree = "<group>"; };
+		3E452D3223BFCC2400AC3D9E /* NumberGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberGameViewController.swift; sourceTree = "<group>"; };
+		3E452D3423C0348B00AC3D9E /* SpellingGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellingGameViewController.swift; sourceTree = "<group>"; };
+		3E452D3623C035E700AC3D9E /* GAMESViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAMESViewController.swift; sourceTree = "<group>"; };
+		3E452D3823C4F13600AC3D9E /* SAFARIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAFARIViewController.swift; sourceTree = "<group>"; };
+		3E452D3A23C6098C00AC3D9E /* CountingGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountingGame.swift; sourceTree = "<group>"; };
+		3E452D3C23C60E6E00AC3D9E /* NumberFun.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = NumberFun.json; sourceTree = "<group>"; };
+		3E45D07423C6DB8F00703FDF /* DoddleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoddleViewController.swift; sourceTree = "<group>"; };
 		3E5446E423B6AF6E00373107 /* TiffanyBreakProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TiffanyBreakProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E5446E723B6AF6E00373107 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E5446E923B6AF6E00373107 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +95,7 @@
 				3E54470B23B6CD6900373107 /* VideosStruct.swift */,
 				3E54470D23B6D5CE00373107 /* VideosTableViewCell.swift */,
 				3E54470F23B6D81900373107 /* VIDEOSViewController.swift */,
+				3E452D3823C4F13600AC3D9E /* SAFARIViewController.swift */,
 			);
 			path = "VIDEO INFO !";
 			sourceTree = "<group>";
@@ -101,7 +114,12 @@
 			children = (
 				3E452D2E23BFCBC200AC3D9E /* TicTacToeViewController.swift */,
 				3E452D3023BFCBE500AC3D9E /* ColorMatchingViewController.swift */,
-				3E452D3223BFCC2400AC3D9E /* NumberMatchingViewController.swift */,
+				3E452D3223BFCC2400AC3D9E /* NumberGameViewController.swift */,
+				3E452D3A23C6098C00AC3D9E /* CountingGame.swift */,
+				3E452D3C23C60E6E00AC3D9E /* NumberFun.json */,
+				3E452D3423C0348B00AC3D9E /* SpellingGameViewController.swift */,
+				3E452D3623C035E700AC3D9E /* GAMESViewController.swift */,
+				3E45D07423C6DB8F00703FDF /* DoddleViewController.swift */,
 			);
 			path = "GAMES INFO!";
 			sourceTree = "<group>";
@@ -231,6 +249,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E452D3D23C60E6E00AC3D9E /* NumberFun.json in Resources */,
 				3E5446F423B6AF7300373107 /* LaunchScreen.storyboard in Resources */,
 				3E5446F123B6AF7300373107 /* Assets.xcassets in Resources */,
 				3E5446EF23B6AF6E00373107 /* Main.storyboard in Resources */,
@@ -256,13 +275,18 @@
 				3E54470C23B6CD6900373107 /* VideosStruct.swift in Sources */,
 				3E5446EC23B6AF6E00373107 /* MAINViewController.swift in Sources */,
 				3E452D2F23BFCBC200AC3D9E /* TicTacToeViewController.swift in Sources */,
+				3E45D07523C6DB8F00703FDF /* DoddleViewController.swift in Sources */,
 				3E5446E823B6AF6E00373107 /* AppDelegate.swift in Sources */,
 				3E54471023B6D81900373107 /* VIDEOSViewController.swift in Sources */,
 				3E5446EA23B6AF6E00373107 /* SceneDelegate.swift in Sources */,
 				3E452D3123BFCBE500AC3D9E /* ColorMatchingViewController.swift in Sources */,
+				3E452D3923C4F13600AC3D9E /* SAFARIViewController.swift in Sources */,
+				3E452D3523C0348B00AC3D9E /* SpellingGameViewController.swift in Sources */,
 				3E02F99523BAD18100C729BF /* App Error.swift in Sources */,
+				3E452D3B23C6098C00AC3D9E /* CountingGame.swift in Sources */,
 				3E02F99323BACF9200C729BF /* Network Helper.swift in Sources */,
-				3E452D3323BFCC2400AC3D9E /* NumberMatchingViewController.swift in Sources */,
+				3E452D3723C035E700AC3D9E /* GAMESViewController.swift in Sources */,
+				3E452D3323BFCC2400AC3D9E /* NumberGameViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

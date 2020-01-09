@@ -53,4 +53,48 @@ class TiffanyBreakProjectTests: XCTestCase {
         
     }
 
+   func testNumberFunFactsApiForData() {
+        let exp = XCTestExpectation(description: "search found")
+    
+    let numberFunFactURL = "https://5c1d79abbc26950013fbcaa9.mockapi.io/api/v1/elements"
+    
+        let request = URLRequest(url: URL(string: numberFunFactURL)!)
+        
+    NetworkHelper.shared.performTaskData(with: request) { (result) in
+            switch result {
+            case .failure(let appError):
+                XCTFail("appError: \(appError)")
+                
+            case .success(let data):
+                exp.fulfill()
+                
+                XCTAssertGreaterThan(data.count, 8_000, "data.count:\(data) should be greater that 71,000bytes .")
+            }
+        }
+        
+        wait(for: [exp], timeout: 5.0)
+    }
+
+    func testNumberFunFactsModel() {
+        
+        struct Numbers: Decodable {
+            
+            let one: String
+        }
+        
+    let json = """
+        {
+        "one": "one.jpg",
+        "two": "two.jpg",
+        "three":"three.jpg",
+        "four": "four.jpg",
+        "five": "five.jpg",
+        }
+        """.data(using: .utf8)!
+        
+        let funfact = try! JSONDecoder().decode(Numbers.self, from: json)
+        
+        XCTAssertEqual(funfact.one, "one.jpg")
+
+    }
 }

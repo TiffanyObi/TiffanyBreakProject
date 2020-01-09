@@ -20,7 +20,7 @@ class VideosTableViewCell: UITableViewCell {
     
     func configureCell(for video: VideoDetails ) {
         
-        videoTextView.text = "WATCH VIDEO 🥳"
+        videoTextView.text = video.videoURL
         
         videoImageView.image = UIImage(named: video.image)
     }

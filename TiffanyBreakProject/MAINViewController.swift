@@ -32,13 +32,22 @@ class MAINViewController: UIViewController {
         
     }
 
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        videosButton.layer.cornerRadius = 20
+        videosButton.clipsToBounds = true
+        
+        gamesButton.layer.cornerRadius = 20
+        gamesButton.clipsToBounds = true
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         updatebuttonImages()
         nameTextField.delegate = self
 
-      
+        
     }
     
     let redCG = 0.2
