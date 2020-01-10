@@ -79,22 +79,26 @@ class TiffanyBreakProjectTests: XCTestCase {
         
         struct Numbers: Decodable {
             
-            let one: String
+            let numbers: [String]
         }
         
     let json = """
         {
-        "one": "one.jpg",
-        "two": "two.jpg",
-        "three":"three.jpg",
-        "four": "four.jpg",
-        "five": "five.jpg",
+            "numbers": [
+                "one.jpg",
+                "two.jpg",
+                "three.jpg",
+                "four.jpg",
+                "five.jpg"
+
+            ]
+
         }
         """.data(using: .utf8)!
         
         let funfact = try! JSONDecoder().decode(Numbers.self, from: json)
         
-        XCTAssertEqual(funfact.one, "one.jpg")
+        XCTAssertEqual(funfact.numbers.first, "one.jpg")
 
     }
 }

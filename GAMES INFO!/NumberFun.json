@@ -1,9 +1,13 @@
 {
-    "one": "one.jpg",
-    "two": "two.jpg",
-    "three":"three.jpg",
-    "four": "four.jpg",
-    "five": "five.jpg",
+    "numbers": [
+        "one.jpg",
+        "two.jpg",
+        "three.jpg",
+        "four.jpg",
+        "five.jpg"
+
+    ]
+
 }
     
     

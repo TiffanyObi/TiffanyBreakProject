@@ -46,7 +46,9 @@ class MAINViewController: UIViewController {
         super.viewDidLoad()
         updatebuttonImages()
         nameTextField.delegate = self
-
+        redbutton.layer.cornerRadius = 30
+        blueButton.layer.cornerRadius = 30
+        greenButton.layer.cornerRadius = 30
         
     }
     

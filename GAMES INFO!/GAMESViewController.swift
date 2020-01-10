@@ -18,14 +18,19 @@ class GAMESViewController: UIViewController {
     
     @IBOutlet weak var spellingGameButton: UIButton!
     
+    @IBOutlet weak var drawButtonPressed: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+       updateUI()
     }
     
     func updateUI() {
         
+        drawButtonPressed.layer.borderWidth = 10
+        
+        drawButtonPressed.layer.borderColor = .init(srgbRed: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)
     }
     
 

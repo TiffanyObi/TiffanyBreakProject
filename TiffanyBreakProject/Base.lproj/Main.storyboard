@@ -420,7 +420,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="numbercover" translatesAutoresizingMaskIntoConstraints="NO" id="HIe-Cv-ETY">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="numbercover" translatesAutoresizingMaskIntoConstraints="NO" id="HIe-Cv-ETY">
                                 <rect key="frame" x="0.0" y="278" width="414" height="398"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -450,7 +450,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6id-jr-6BU">
-                                <rect key="frame" x="0.0" y="88" width="345" height="163"/>
+                                <rect key="frame" x="0.0" y="96" width="414" height="161.5"/>
                                 <state key="normal" title="TicTacToe" image="tictactoe">
                                     <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -459,61 +459,76 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gM9-31-qpf">
-                                <rect key="frame" x="64" y="259" width="350" height="153"/>
-                                <state key="normal" title="ColorMatching" image="colorMatching"/>
+                                <rect key="frame" x="0.0" y="257.5" width="414" height="164"/>
+                                <state key="normal" title="ColorMatching" image="kidscolor"/>
                                 <connections>
                                     <segue destination="tfc-k8-4y0" kind="show" identifier="colorMatching" id="cgH-bm-1R1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nc2-Cu-3Jv">
-                                <rect key="frame" x="0.0" y="420" width="345" height="169"/>
+                                <rect key="frame" x="0.0" y="421.5" width="414" height="161"/>
                                 <state key="normal" title="NumberGames" image="numpuz-classic-number-game-for-ios-thumb-9uGMNlJQX"/>
                                 <connections>
                                     <segue destination="5J6-K7-0dg" kind="show" identifier="numberGames" id="b83-R8-kZo"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idW-y1-mop">
-                                <rect key="frame" x="64" y="597" width="350" height="163"/>
-                                <state key="normal" title="SpellingGames" image="images-1"/>
+                                <rect key="frame" x="0.0" y="582.5" width="414" height="164"/>
+                                <state key="normal" title="SpellingGames" image="Kids-Alphabet-Games"/>
                                 <connections>
                                     <segue destination="2nq-Pc-I90" kind="show" identifier="spellingGames" id="4tL-mu-r9R"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15E-zN-7L0">
-                                <rect key="frame" x="147" y="768" width="120" height="94"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <state key="normal" title="Let's DRAW !" backgroundImage="doc.richtext" catalog="system"/>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15E-zN-7L0">
+                                <rect key="frame" x="70" y="753.5" width="274" height="123.5"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" backgroundImage="scribble" catalog="system"/>
                                 <connections>
                                     <segue destination="VQV-6o-9oN" kind="show" id="7dJ-wh-c6j"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LET'S DRAW" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AhV-eo-6p8">
+                                <rect key="frame" x="90" y="766.5" width="104" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="104" id="lms-Jf-7Fa"/>
+                                    <constraint firstAttribute="height" constant="31" id="tO2-gY-myc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <color key="textColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="idW-y1-mop" firstAttribute="trailing" secondItem="gHl-xN-j1d" secondAttribute="trailing" id="5wu-w7-ZYv"/>
-                            <constraint firstItem="15E-zN-7L0" firstAttribute="bottom" secondItem="gHl-xN-j1d" secondAttribute="bottom" id="APr-yR-Kg9"/>
-                            <constraint firstItem="nc2-Cu-3Jv" firstAttribute="height" secondItem="Ybb-T4-TfN" secondAttribute="height" multiplier="0.188616" id="DZB-e2-FE8"/>
-                            <constraint firstItem="nc2-Cu-3Jv" firstAttribute="width" secondItem="Ybb-T4-TfN" secondAttribute="width" multiplier="0.833333" id="HuC-Ru-ewN"/>
-                            <constraint firstItem="idW-y1-mop" firstAttribute="height" secondItem="Ybb-T4-TfN" secondAttribute="height" multiplier="0.18192" id="KR3-sx-pQx"/>
-                            <constraint firstItem="nc2-Cu-3Jv" firstAttribute="top" secondItem="gM9-31-qpf" secondAttribute="bottom" constant="8" id="Kfl-wO-AyK"/>
-                            <constraint firstItem="gM9-31-qpf" firstAttribute="top" secondItem="6id-jr-6BU" secondAttribute="bottom" constant="8" id="ZjZ-hH-qBA"/>
-                            <constraint firstItem="6id-jr-6BU" firstAttribute="height" secondItem="Ybb-T4-TfN" secondAttribute="height" multiplier="0.18192" id="bYd-k8-LzO"/>
-                            <constraint firstItem="15E-zN-7L0" firstAttribute="top" secondItem="idW-y1-mop" secondAttribute="bottom" constant="8" id="c3M-vn-n43"/>
-                            <constraint firstItem="idW-y1-mop" firstAttribute="width" secondItem="Ybb-T4-TfN" secondAttribute="width" multiplier="0.845411" id="cMd-4J-eZY"/>
-                            <constraint firstItem="6id-jr-6BU" firstAttribute="top" secondItem="gHl-xN-j1d" secondAttribute="top" id="cbz-8r-Sas"/>
-                            <constraint firstItem="6id-jr-6BU" firstAttribute="leading" secondItem="gHl-xN-j1d" secondAttribute="leading" id="cnA-eO-Lkk"/>
-                            <constraint firstItem="idW-y1-mop" firstAttribute="top" secondItem="nc2-Cu-3Jv" secondAttribute="bottom" constant="8" id="hHA-VT-d9c"/>
-                            <constraint firstItem="gM9-31-qpf" firstAttribute="height" secondItem="Ybb-T4-TfN" secondAttribute="height" multiplier="0.170759" id="iXh-Kl-PEd"/>
-                            <constraint firstItem="nc2-Cu-3Jv" firstAttribute="leading" secondItem="gHl-xN-j1d" secondAttribute="leading" id="jvb-lt-5sk"/>
-                            <constraint firstItem="gM9-31-qpf" firstAttribute="width" secondItem="Ybb-T4-TfN" secondAttribute="width" multiplier="0.845411" id="lEb-WU-8KD"/>
-                            <constraint firstItem="gM9-31-qpf" firstAttribute="trailing" secondItem="gHl-xN-j1d" secondAttribute="trailing" id="tfd-6P-LtX"/>
-                            <constraint firstItem="6id-jr-6BU" firstAttribute="width" secondItem="Ybb-T4-TfN" secondAttribute="width" multiplier="0.833333" id="yvP-XS-Dzy"/>
+                            <constraint firstItem="6id-jr-6BU" firstAttribute="trailing" secondItem="gHl-xN-j1d" secondAttribute="trailing" id="CQ2-lg-91j"/>
+                            <constraint firstItem="nc2-Cu-3Jv" firstAttribute="trailing" secondItem="gHl-xN-j1d" secondAttribute="trailing" id="LuV-lt-BEh"/>
+                            <constraint firstItem="15E-zN-7L0" firstAttribute="leading" secondItem="gHl-xN-j1d" secondAttribute="leading" constant="70" id="QKk-ZM-goa"/>
+                            <constraint firstItem="15E-zN-7L0" firstAttribute="top" secondItem="idW-y1-mop" secondAttribute="bottom" constant="8" id="S0T-XT-jxJ"/>
+                            <constraint firstItem="nc2-Cu-3Jv" firstAttribute="top" secondItem="gM9-31-qpf" secondAttribute="bottom" id="SvN-fZ-ViU"/>
+                            <constraint firstItem="6id-jr-6BU" firstAttribute="height" secondItem="Ybb-T4-TfN" secondAttribute="height" multiplier="0.18" id="dDP-Kf-TE6"/>
+                            <constraint firstItem="gM9-31-qpf" firstAttribute="height" secondItem="Ybb-T4-TfN" secondAttribute="height" multiplier="0.183036" id="hC5-in-NSg"/>
+                            <constraint firstItem="AhV-eo-6p8" firstAttribute="top" secondItem="idW-y1-mop" secondAttribute="bottom" constant="20" id="hTa-9w-3OR"/>
+                            <constraint firstItem="nc2-Cu-3Jv" firstAttribute="height" secondItem="Ybb-T4-TfN" secondAttribute="height" multiplier="0.18" id="kQA-zg-0Dq"/>
+                            <constraint firstItem="6id-jr-6BU" firstAttribute="top" secondItem="gHl-xN-j1d" secondAttribute="top" constant="8" id="koJ-h3-Omi"/>
+                            <constraint firstItem="AhV-eo-6p8" firstAttribute="leading" secondItem="gHl-xN-j1d" secondAttribute="leading" constant="90" id="mz4-K9-odc"/>
+                            <constraint firstItem="idW-y1-mop" firstAttribute="height" secondItem="Ybb-T4-TfN" secondAttribute="height" multiplier="0.183" id="nKp-s3-78c"/>
+                            <constraint firstItem="nc2-Cu-3Jv" firstAttribute="leading" secondItem="gHl-xN-j1d" secondAttribute="leading" id="od8-tX-xPZ"/>
+                            <constraint firstAttribute="bottom" secondItem="15E-zN-7L0" secondAttribute="bottom" constant="16" id="olU-sQ-iD6"/>
+                            <constraint firstItem="idW-y1-mop" firstAttribute="trailing" secondItem="gHl-xN-j1d" secondAttribute="trailing" id="sYH-jw-2KS"/>
+                            <constraint firstItem="6id-jr-6BU" firstAttribute="leading" secondItem="gHl-xN-j1d" secondAttribute="leading" id="sck-hr-vdq"/>
+                            <constraint firstItem="gHl-xN-j1d" firstAttribute="trailing" secondItem="15E-zN-7L0" secondAttribute="trailing" constant="70" id="u1G-kh-VF8"/>
+                            <constraint firstItem="gM9-31-qpf" firstAttribute="leading" secondItem="gHl-xN-j1d" secondAttribute="leading" id="v5n-AM-gfm"/>
+                            <constraint firstItem="idW-y1-mop" firstAttribute="top" secondItem="nc2-Cu-3Jv" secondAttribute="bottom" id="wBz-GY-ki7"/>
+                            <constraint firstItem="gM9-31-qpf" firstAttribute="top" secondItem="6id-jr-6BU" secondAttribute="bottom" id="wNc-Pv-FVy"/>
+                            <constraint firstItem="idW-y1-mop" firstAttribute="leading" secondItem="gHl-xN-j1d" secondAttribute="leading" id="wSs-RR-yQS"/>
+                            <constraint firstItem="gM9-31-qpf" firstAttribute="trailing" secondItem="gHl-xN-j1d" secondAttribute="trailing" id="ywe-eF-gG4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gHl-xN-j1d"/>
                     </view>
                     <navigationItem key="navigationItem" id="c0j-SB-RQq"/>
                     <connections>
                         <outlet property="colorMatchingButton" destination="gM9-31-qpf" id="KYr-AB-mvP"/>
+                        <outlet property="drawButtonPressed" destination="15E-zN-7L0" id="uPt-qk-ah4"/>
                         <outlet property="numberGamesButton" destination="nc2-Cu-3Jv" id="tTH-kG-3CZ"/>
                         <outlet property="spellingGameButton" destination="idW-y1-mop" id="ITG-jI-pZV"/>
                         <outlet property="ticTacToeButton" destination="6id-jr-6BU" id="iY9-KP-uV4"/>
@@ -530,20 +545,12 @@
                     <view key="view" contentMode="scaleToFill" id="8ga-vz-Hqe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mz1-7M-yZT">
-                                <rect key="frame" x="38" y="783" width="86" height="79"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="CLEAR">
-                                    <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="1h3-W1-KLw"/>
                     </view>
-                    <navigationItem key="navigationItem" id="e8L-Wy-ySJ"/>
+                    <navigationItem key="navigationItem" id="e8L-Wy-ySJ">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="HYe-nR-42h"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Obe-Wc-hYX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -594,15 +601,15 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="videoCell" rowHeight="198" id="LNV-D1-dbi" customClass="VideosTableViewCell" customModule="TiffanyBreakProject" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="198"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="videoCell" rowHeight="367" id="LNV-D1-dbi" customClass="VideosTableViewCell" customModule="TiffanyBreakProject" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="367"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LNV-D1-dbi" id="A16-2J-oCr">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="198"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="367"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3g8-DN-3SZ">
-                                                    <rect key="frame" x="8" y="0.0" width="397" height="134"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3g8-DN-3SZ">
+                                                    <rect key="frame" x="8" y="0.0" width="397" height="297"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOh-l1-a4j">
@@ -614,10 +621,10 @@
                                                     </connections>
                                                 </button>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="giO-kb-Isa">
-                                                    <rect key="frame" x="34" y="142" width="338" height="45"/>
+                                                    <rect key="frame" x="37" y="305" width="338" height="51"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     <dataDetectorType key="dataDetectorTypes" link="YES"/>
@@ -682,12 +689,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="colorMatching" width="387" height="400"/>
-        <image name="doc.richtext" catalog="system" width="56" height="64"/>
-        <image name="images-1" width="356" height="142"/>
+        <image name="Kids-Alphabet-Games" width="600" height="338"/>
+        <image name="kidscolor" width="1540" height="962"/>
         <image name="newgrid" width="1030" height="1042"/>
         <image name="numbercover" width="200" height="200"/>
         <image name="numpuz-classic-number-game-for-ios-thumb-9uGMNlJQX" width="640" height="335"/>
+        <image name="scribble" catalog="system" width="64" height="54"/>
         <image name="tictactoe" width="720" height="352"/>
     </resources>
 </document>

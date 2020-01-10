@@ -11,6 +11,7 @@ import UIKit
 class VideosTableViewCell: UITableViewCell {
 
     
+    
     @IBOutlet weak var videoTextView: UITextView!
     
     @IBOutlet weak var videoImageView: UIImageView!
@@ -19,10 +20,14 @@ class VideosTableViewCell: UITableViewCell {
     var video: VideoDetails!
     
     func configureCell(for video: VideoDetails ) {
+        self.backgroundColor = .green
         
         videoTextView.text = video.videoURL
-        
+        videoTextView.backgroundColor = .systemTeal
+        videoTextView.textColor = .black
         videoImageView.image = UIImage(named: video.image)
+        
+        videoImageView.layer.cornerRadius = 20
     }
 
 }

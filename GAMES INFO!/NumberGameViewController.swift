@@ -17,20 +17,32 @@ class NumberGameViewController: UIViewController {
     @IBOutlet weak var answerTextField: UITextField!
     
     
-    var numbers: CountingGame!
-    
+    var numbers: NumberNames!
+    var numberImages:[String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+      
     }
     
+    func getRandomImages() -> String {
+        
+        numberImages = NumberNames.getNumberNames()
+        
+        
+        print(numberImages)
+        
+        let randomImage = numberImages.randomElement() ?? ""
+        
+        return randomImage
+    }
 
    
     @IBAction func startGameButtonPressed(_ sender: UIButton) {
         
+        let randomNumberImage = getRandomImages()
         
+        numberPictureView.image = UIImage(named: randomNumberImage)
         
     }
     
